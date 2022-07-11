@@ -80,19 +80,17 @@ window.onscroll =  ()=> {
 };
 
 
-
-
-  let links = document.querySelectorAll("a");
-  links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      let id = e.target.attributes.href.value;
-      let section = document.querySelector(id);
-      section.scrollIntoView({
-        behavior : "smooth",
-      })
-    });
-  });
+  // let links = document.querySelectorAll("a");
+  // links.forEach((link) => {
+  //   link.addEventListener("click", (e) => {
+  //     e.preventDefault();
+  //     let id = e.target.attributes.href.value;
+  //     let section = document.querySelector(id);
+  //     section.scrollIntoView({
+  //       behavior : "smooth",
+  //     })
+  //   });
+  // });
 
 document.getElementById("submit").onclick = function (e) {
   e.preventDefault();
